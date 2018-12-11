@@ -43,7 +43,7 @@ class Teste extends Component {
           <div>
             <nav className="navbar navbar-light">
             <form className="form-inline">
-                <label>Search  </label>
+                <label>Search</label>
                 <input 
                 className="form-control mr-sm-2" 
                 type="search" 

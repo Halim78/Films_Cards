@@ -12,6 +12,7 @@
 button
 {
     border-radius: 05px;
+    margin-top: 10px;
 }
 
 .supp{
@@ -38,10 +39,11 @@ button:hover
 
 h1
 {
+  padding-top: 15px;
   text-align: center;
-    background-color: grey;
-    height: 80px;
-    text-shadow: 1px 1px 1px white;
+  background-color: grey;
+  height: 80px;
+  text-shadow: 1px 1px 1px white;
 }
 
 h2
@@ -56,6 +58,8 @@ h2
   height: 400px;
   background-color: whitesmoke;
   margin-right: 15px;
+  border-radius: 10px;
+  margin-top: 50px;
 }
 
 .progress{
