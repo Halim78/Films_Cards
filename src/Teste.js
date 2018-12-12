@@ -37,12 +37,13 @@ class Teste extends Component {
 
     handleSupprime = (e) => {
       this.setState({
-        resultat : movies.filter(f => (f.title !== e.target.name))
+        resultat : this.state.resultat.filter(f => (f.title !== e.target.name))
       })
     }
     
-
-      render() {
+    
+    render() {
+      console.log(this.state.resultat)
         const todoSearch = 
         this.state.resultat.filter(f => 
         (f.category.toLowerCase().indexOf(this.state.item) !== -1) || (f.category.toUpperCase().indexOf(this.state.item) !== -1));
