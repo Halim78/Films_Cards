@@ -24,12 +24,7 @@ import dislike from './images/dislike.png';
       }
 
 
-      handleSupprime = (i) => {
-        this.setState({
-          access : false
-        })
-      }
-      
+     
 
       render(){
         return (
@@ -53,7 +48,7 @@ import dislike from './images/dislike.png';
                       <button onClick={this.handleLess}><img className="like" src={dislike} alt="main" /></button>
                 </div>
                 <div>
-                  <button className="supp" onClick={this.handleSupprime}>Supprimer</button>
+                  <button name={this.props.title} className="supp" onClick={this.props.handleSupprime}>Supprimer</button>
                 </div>
                </div>
             </div>

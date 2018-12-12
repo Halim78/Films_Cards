@@ -35,6 +35,13 @@ class Teste extends Component {
         }       
     }
 
+    handleSupprime = (e) => {
+      this.setState({
+        resultat : movies.filter(f => (f.title !== e.target.name))
+      })
+    }
+    
+
       render() {
         const todoSearch = 
         this.state.resultat.filter(f => 
@@ -60,7 +67,7 @@ class Teste extends Component {
             <div className="afficher">
               {todoSearch.slice((this.state.page-1)*4, this.state.page*4).map((e,i) => (
               <div className="bloc-1">
-                <Affichage key={i} title={e.title} category={e.category} like={e.likes} dislike={e.dislikes} /> 
+                <Affichage key={i} title={e.title} category={e.category} handleSupprime={this.handleSupprime}like={e.likes} dislike={e.dislikes} /> 
               </div>))}
             </div>
           </div>
